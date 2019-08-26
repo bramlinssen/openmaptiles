@@ -95,8 +95,8 @@ RETURNS TABLE(osm_id bigint, geometry geometry, class text, subclass text) AS $$
     SELECT osm_id, geometry,
         landcover_class(landuse, "natural", leisure, wetland) AS class,
         COALESCE(
-            NULLIF("natural", ''), NULLIF(landuse, ''),
-            NULLIF(leisure, ''), NULLIF(wetland, '')
+            NULLIF(wetland, ''), NULLIF("natural", ''),
+            NULLIF(landuse, ''), NULLIF(leisure, '')
         ) AS subclass
         FROM (
         -- etldoc:  landcover_z0 -> layer_landcover:z0_1
