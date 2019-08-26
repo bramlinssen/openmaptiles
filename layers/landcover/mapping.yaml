@@ -90,6 +90,7 @@ tables:
       - glacier
       - bare_rock
       - scree
+      - scrub
       - beach
       - sand
       leisure:

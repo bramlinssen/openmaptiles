@@ -16,6 +16,7 @@ layer:
       - grass
       - wetland
       - sand
+      - scrub
     subclass:
       description: |
           Use **subclass** to do more precise styling.
