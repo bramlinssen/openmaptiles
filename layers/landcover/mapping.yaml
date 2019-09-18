@@ -93,6 +93,7 @@ tables:
       - scrub
       - beach
       - sand
+      - heath
       leisure:
       - park
       - garden

@@ -17,6 +17,7 @@ layer:
       - wetland
       - sand
       - scrub
+      - heath
     subclass:
       description: |
           Use **subclass** to do more precise styling.
